@@ -1,0 +1,110 @@
+  
+Software Engineer Test (SDT) Homework Assignment
+
+High Level Project Details:
+Splunk has decided to diversify its product line and go into the movie data business. We are collecting movie information from a variety of sources and exposing REST API to enable anyone to be able fetch these details. In addition, users can also submit movie information. Splunk is using some fancy ML algorithms to process the submission and add to our movie database. 
+
+We have released our super beta version 0.001 of the /movie API. Your job is to thoroughly test the REST API and implement a test framework and write tests using any open-source tools/frameworks and programming language of your choice. 
+
+Movie API Details:
+Endpoint: https://splunk.mocklab.io/movies
+
+GET /movie: Returns Splunk’s entire collection of movies
+
+Parameters
+Name	Required	Description	Internal Splunk Notes
+Q	Required	Movie name	Currently, the API only supports q=’batman’. We are starting with batman catalog
+count	optional	Limits number of records in the response. Count = 0 mean return all records	
+
+Headers:
+Must pass headers: Accept = application/json
+
+Example curl call:
+
+curl -X GET https://splunk.mocklab.io/movies?q=batman -H "Accept: application/json"
+
+
+POST /movie: Allows anyone to submit a movie and it’s description for processing. Once posted, the movie will appear in the GET /movie API 
+
+Payload:
+name: <string> (required)
+description: <string>	(required)
+
+Headers:
+Must pass headers: Content-Type = application/json
+
+Example curl call:
+
+curl -d '{"name":"superman", "description":"the best movie ever made"}' -H "Content-Type: application/json" -X POST https://splunk.mocklab.io/movies
+
+
+
+Business Requirements 
+Here are some business requirements for the /movie API. You should use business requirements + API Docs to create your test and check for valid behavior 
+
+SPL-001: No two movies should have the same image 
+
+SPL-002: All poster_path links must be valid. poster_path link of null is also acceptable
+
+SPL-003: Sorting requirement. Rule #1 Movies with genre_ids == null should be first in response. Rule #2, if multiple movies have genre_ids == null, then sort by id (ascending). For movies that have non-null genre_ids, results should be sorted by id (ascending)
+
+SPL-004: The number of movies whose sum of "genre_ids" > 400 should be no more than 7. Another way of saying this is: there at most 7 movies such that their sum of genre_ids is great than 400
+
+SPL-005: There is at least one movie in the database whose title has a palindrome in it. 
+Example: "title": "Batman: Return of the Kayak Crusaders". The title contains ‘kayak’ which is a palindrome.
+
+SPL-006: There are at least two movies in the database whose title contain the title of another movie. Example: movie id: 287757 (Scooby-Doo Meets Dante), movie id: 404463 (Dante). This example shows one such set. The business requirement is that there are at least two such occurrences. 
+
+
+What is your homework?
+Your homework is to fully test the REST API using any programming language and test framework of your choice. The solution should contain tests that you think are appropriate for testing the above requirements, API docs,  as well as behaviors and expectations of a typical REST service. 
+
+-	Design a well-structured test framework
+-	Develop your test code using your own git repo and zip up send the repo at the end
+-	Document all the bugs that you find with the service (there are a lot)
+o	HINT: some tests should fail because of bugs in the API
+o	Note: There are quite a few bugs in the service. Your other task is to discover these bugs 
+
+Important Notes: 
+-	Do not load test the service. This will get result in negative points for the interview. 
+-	Use proper dependency management solutions in your code. Example: pip in python, POM for JAVA Maven, Gradle dependency, etc.
+-	Use GIT properly as you develop your code. 
+o	Hint: Don’t do one huge submission
+-	Be creative. Maybe there are ways to run your tests faster, maybe there are cool framework like BDD, maybe you want to use docker somehow, etc.?
+
+What do I submit and how do I submit?
+•	How to submit ?
+•	(option 1) check-in everything to your own GIT repo and send us the link to repo.
+•	(option 2) zip up your GIT repo and send us the archive
+
+	What to submit ?
+•	Code
+•	A little readme explaining how to run your tests and if there is any special environment requirements. We will follow your instructions and run your tests
+•	A little readme explaining anything else would like us to know
+•	List of the bugs found by you and tests cases 
+
+
+
+
+
+> Frequently Asked Questions
+
+Why do I need to do this test?
+Splunk Test engineers are expected to have a decently high degree of programming competency. In addition to programming, you need to really excel in finding software defects and use or develop the tools that help you uncover defects and prevent regression failures. This test will help us get a little idea about your programming level, comprehension skills, problem solving using appropriate tools and frameworks, and general interest in quality engineering.
+
+What kind of testing tools and framework should I use?
+Our only requirement is that you use any open source tool and framework that you are most comfortable with or want to explore. 
+
+Does Splunk have any recommendation?
+If you are solving this in 
+	Python: Python 2.x / 3.x, Pytest (testing framework/tool), requests / unirest /etc
+	JAVA: JAVA latest, TestNG or JUnit, REST Assure / unirest / httpclient / etc
+
+Does Splunk have any guidelines or hints for this project?
+We recommend that you are creative and thorough in your testing. 
+•	Understand the concept of REST and figure out how best to test REST services.
+•	Think about what can go wrong and write tests to cover these cases
+•	Document your code using appropriate coding styles in java/python
+•	Use proper dependency management solutions. Example: pip in python, POM for JAVA Maven, Gradle dependency, etc
+
+
