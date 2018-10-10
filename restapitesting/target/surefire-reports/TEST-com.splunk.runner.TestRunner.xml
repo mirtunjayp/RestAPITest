@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.splunk.runner.TestRunner" time="66.632" tests="24" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Splunk\restapitesting\target\test-classes;C:\Splunk\restapitesting\target\classes;C:\Users\mirtunjay\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\mirtunjay\.m2\repository\com\jayway\restassured\rest-assured\2.9.0\rest-assured-2.9.0.jar;C:\Users\mirtunjay\.m2\repository\org\codehaus\groovy\groovy\2.4.4\groovy-2.4.4.jar;C:\Users\mirtunjay\.m2\repository\org\codehaus\groovy\groovy-xml\2.4.4\groovy-xml-2.4.4.jar;C:\Users\mirtunjay\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\mirtunjay\.m2\repository\org\apache\httpcomponents\httpcore\4.4.3\httpcore-4.4.3.jar;C:\Users\mirtunjay\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mirtunjay\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\mirtunjay\.m2\repository\org\apache\httpcomponents\httpmime\4.5.1\httpmime-4.5.1.jar;C:\Users\mirtunjay\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\mirtunjay\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\mirtunjay\.m2\repository\com\jayway\restassured\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\mirtunjay\.m2\repository\com\jayway\restassured\rest-assured-common\2.9.0\rest-assured-common-2.9.0.jar;C:\Users\mirtunjay\.m2\repository\com\jayway\restassured\xml-path\2.9.0\xml-path-2.9.0.jar;C:\Users\mirtunjay\.m2\repository\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar;C:\Users\mirtunjay\.m2\repository\info\cukes\cucumber-junit\1.2.5\cucumber-junit-1.2.5.jar;C:\Users\mirtunjay\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\mirtunjay\.m2\repository\info\cukes\cucumber-html\0.2.3\cucumber-html-0.2.3.jar;C:\Users\mirtunjay\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\mirtunjay\.m2\repository\info\cukes\cucumber-jvm-deps\1.0.5\cucumber-jvm-deps-1.0.5.jar;C:\Users\mirtunjay\.m2\repository\info\cukes\gherkin\2.12.2\gherkin-2.12.2.jar;C:\Users\mirtunjay\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\mirtunjay\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;C:\Users\mirtunjay\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mirtunjay\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;C:\Users\mirtunjay\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\mirtunjay\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\mirtunjay\.m2\repository\io\rest-assured\json-path\3.1.1\json-path-3.1.1.jar;C:\Users\mirtunjay\.m2\repository\org\codehaus\groovy\groovy-json\2.4.12\groovy-json-2.4.12.jar;C:\Users\mirtunjay\.m2\repository\io\rest-assured\rest-assured-common\3.1.1\rest-assured-common-3.1.1.jar;C:\Users\mirtunjay\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.7\jackson-core-2.9.7.jar;C:\Users\mirtunjay\.m2\repository\org\apache\maven\maven-plugin-api\3.5.4\maven-plugin-api-3.5.4.jar;C:\Users\mirtunjay\.m2\repository\org\apache\maven\maven-model\3.5.4\maven-model-3.5.4.jar;C:\Users\mirtunjay\.m2\repository\org\apache\maven\maven-artifact\3.5.4\maven-artifact-3.5.4.jar;C:\Users\mirtunjay\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.plexus\0.3.3\org.eclipse.sisu.plexus-0.3.3.jar;C:\Users\mirtunjay\.m2\repository\javax\enterprise\cdi-api\1.0\cdi-api-1.0.jar;C:\Users\mirtunjay\.m2\repository\javax\annotation\jsr250-api\1.0\jsr250-api-1.0.jar;C:\Users\mirtunjay\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\mirtunjay\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.inject\0.3.3\org.eclipse.sisu.inject-0.3.3.jar;C:\Users\mirtunjay\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\mirtunjay\.m2\repository\org\codehaus\plexus\plexus-utils\3.1.0\plexus-utils-3.1.0.jar;C:\Users\mirtunjay\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.5.2\plexus-classworlds-2.5.2.jar;C:\Users\mirtunjay\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.7\jackson-databind-2.9.7.jar;C:\Users\mirtunjay\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\MIRTUN~1\AppData\Local\Temp\surefire3855791174033822195\surefirebooter4054098587369450403.jar C:\Users\mirtunjay\AppData\Local\Temp\surefire3855791174033822195 2018-10-09T20-05-59_002-jvmRun1 surefire1288186388740220317tmp surefire_02797122375343107916tmp"/>
+    <property name="surefire.test.class.path" value="C:\Splunk\restapitesting\target\test-classes;C:\Splunk\restapitesting\target\classes;C:\Users\mirtunjay\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\mirtunjay\.m2\repository\com\jayway\restassured\rest-assured\2.9.0\rest-assured-2.9.0.jar;C:\Users\mirtunjay\.m2\repository\org\codehaus\groovy\groovy\2.4.4\groovy-2.4.4.jar;C:\Users\mirtunjay\.m2\repository\org\codehaus\groovy\groovy-xml\2.4.4\groovy-xml-2.4.4.jar;C:\Users\mirtunjay\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\mirtunjay\.m2\repository\org\apache\httpcomponents\httpcore\4.4.3\httpcore-4.4.3.jar;C:\Users\mirtunjay\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mirtunjay\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\mirtunjay\.m2\repository\org\apache\httpcomponents\httpmime\4.5.1\httpmime-4.5.1.jar;C:\Users\mirtunjay\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\mirtunjay\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\mirtunjay\.m2\repository\com\jayway\restassured\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\mirtunjay\.m2\repository\com\jayway\restassured\rest-assured-common\2.9.0\rest-assured-common-2.9.0.jar;C:\Users\mirtunjay\.m2\repository\com\jayway\restassured\xml-path\2.9.0\xml-path-2.9.0.jar;C:\Users\mirtunjay\.m2\repository\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar;C:\Users\mirtunjay\.m2\repository\info\cukes\cucumber-junit\1.2.5\cucumber-junit-1.2.5.jar;C:\Users\mirtunjay\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\mirtunjay\.m2\repository\info\cukes\cucumber-html\0.2.3\cucumber-html-0.2.3.jar;C:\Users\mirtunjay\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\mirtunjay\.m2\repository\info\cukes\cucumber-jvm-deps\1.0.5\cucumber-jvm-deps-1.0.5.jar;C:\Users\mirtunjay\.m2\repository\info\cukes\gherkin\2.12.2\gherkin-2.12.2.jar;C:\Users\mirtunjay\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\mirtunjay\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;C:\Users\mirtunjay\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mirtunjay\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;C:\Users\mirtunjay\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\mirtunjay\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\mirtunjay\.m2\repository\io\rest-assured\json-path\3.1.1\json-path-3.1.1.jar;C:\Users\mirtunjay\.m2\repository\org\codehaus\groovy\groovy-json\2.4.12\groovy-json-2.4.12.jar;C:\Users\mirtunjay\.m2\repository\io\rest-assured\rest-assured-common\3.1.1\rest-assured-common-3.1.1.jar;C:\Users\mirtunjay\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.7\jackson-core-2.9.7.jar;C:\Users\mirtunjay\.m2\repository\org\apache\maven\maven-plugin-api\3.5.4\maven-plugin-api-3.5.4.jar;C:\Users\mirtunjay\.m2\repository\org\apache\maven\maven-model\3.5.4\maven-model-3.5.4.jar;C:\Users\mirtunjay\.m2\repository\org\apache\maven\maven-artifact\3.5.4\maven-artifact-3.5.4.jar;C:\Users\mirtunjay\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.plexus\0.3.3\org.eclipse.sisu.plexus-0.3.3.jar;C:\Users\mirtunjay\.m2\repository\javax\enterprise\cdi-api\1.0\cdi-api-1.0.jar;C:\Users\mirtunjay\.m2\repository\javax\annotation\jsr250-api\1.0\jsr250-api-1.0.jar;C:\Users\mirtunjay\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\mirtunjay\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.inject\0.3.3\org.eclipse.sisu.inject-0.3.3.jar;C:\Users\mirtunjay\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\mirtunjay\.m2\repository\org\codehaus\plexus\plexus-utils\3.1.0\plexus-utils-3.1.0.jar;C:\Users\mirtunjay\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.5.2\plexus-classworlds-2.5.2.jar;C:\Users\mirtunjay\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.7\jackson-databind-2.9.7.jar;C:\Users\mirtunjay\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\mirtunjay"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_181\jre"/>
+    <property name="basedir" value="C:\Splunk\restapitesting"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\MIRTUN~1\AppData\Local\Temp\surefire3855791174033822195\surefirebooter4054098587369450403.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_181\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_181-b13"/>
+    <property name="user.name" value="mirtunjay"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\mirtunjay\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\MIRTUN~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_181"/>
+    <property name="user.dir" value="C:\Splunk\restapitesting"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;c:\Program Files (x86)\Symantec\VIP Access Client\;C:\WINDOWS\System32\OpenSSH\;C:\Lib\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Mirtunjay\2016\Learning\eclipse;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.181-b13"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="When User submit GET request with below parameter and get movie data response" classname="| batman | 0 | 200 |" time="0.04"/>
+  <testcase name="When User submit GET request with below parameter and get movie data response" classname="| batman | 0 | 200 |" time="0"/>
+  <testcase name="When User submit GET request with below parameter and get movie data response" classname="| batman | 0 | 200 |" time="0"/>
+  <testcase name="When User submit GET request with below parameter and get movie data response" classname="| batman | 0 | 200 |" time="0"/>
+  <testcase name="When User submit GET request with below parameter and get movie data response" classname="| batman | 0 | 200 |" time="0"/>
+  <testcase name="When User submit GET request with below parameter and get movie data response" classname="| batman | 0 | 200 |" time="0"/>
+  <testcase name="Then User verifies response status code is &quot;200&quot;" classname="| batman | 0 | 200 |" time="0.001"/>
+  <testcase name="Then User verifies response status code is &quot;200&quot;" classname="| batman | 0 | 200 |" time="0"/>
+  <testcase name="Then User verifies response status code is &quot;200&quot;" classname="| batman | 0 | 200 |" time="0.001"/>
+  <testcase name="Then User verifies response status code is &quot;200&quot;" classname="| batman | 0 | 200 |" time="0"/>
+  <testcase name="Then User verifies response status code is &quot;200&quot;" classname="| batman | 0 | 200 |" time="0"/>
+  <testcase name="Then User verifies response status code is &quot;200&quot;" classname="| batman | 0 | 200 |" time="0"/>
+  <testcase name="And User verifies no two movie has same image" classname="| batman | 0 | 200 |" time="0.149">
+    <failure message="Two or more Movies has same image/poster path." type="java.lang.AssertionError">java.lang.AssertionError: Two or more Movies has same image/poster path.
+</failure>
+    <system-out><![CDATA[[main] INFO  com.splunk.base.BaseClass  - Total number of movies:: 16
+[main] INFO  com.splunk.base.BaseClass  - [https://www.dropbox.com/s/8i8v4ak8tnp03w4/action-blur-electronics-247932.jpg?dl=0, https://www.dropbox.com/s/opfcp4ua5fmdszj/actor-actress-adult-974477.jpg?dl=0, https://www.dropbox.com/s/1qcl5f3o1dmsn0d/adult-beard-electronics-819848.jpg?dl=0, https://www.dropbox.com/s/0j5o30t1h21u2pw/architecture-bluebird-theatre-building-208647.jpg?dl=0, https://www.dropbox.com/s/xs5w5v43lpfg4vj/auditorium-chairs-comfortable-269140.jpg?dl=0, https://www.dropbox.com/s/tr9lhmsukyr62nf/black-and-white-caixa-belas-artes-cinema-65437.jpg?dl=0, https://www.dropbox.com/s/l3qyiomplo1xy2p/candy-delicious-eating-2904.jpg?dl=0, https://www.dropbox.com/s/2jda8hu20y99jxl/cinema-food-movie-theater-33129.jpg?dl=0, https://www.dropbox.com/s/2jda8hu20y99jxl/cinema-food-movie-theater-33129.jpg?dl=0, /sWa1Y5QhGuJMjw8uuFoggGLqZ0y.jpg, https://www.dropbox.com/s/2jda8hu20y99jxl/cinema-food-movvvie-theater-33129.jpg?dl=0]
+[main] INFO  com.splunk.base.BaseClass  - List Contains Duplicates
+[main] INFO  com.splunk.base.BaseClass  - List :: [https://www.dropbox.com/s/8i8v4ak8tnp03w4/action-blur-electronics-247932.jpg?dl=0, https://www.dropbox.com/s/opfcp4ua5fmdszj/actor-actress-adult-974477.jpg?dl=0, https://www.dropbox.com/s/1qcl5f3o1dmsn0d/adult-beard-electronics-819848.jpg?dl=0, https://www.dropbox.com/s/0j5o30t1h21u2pw/architecture-bluebird-theatre-building-208647.jpg?dl=0, https://www.dropbox.com/s/xs5w5v43lpfg4vj/auditorium-chairs-comfortable-269140.jpg?dl=0, https://www.dropbox.com/s/tr9lhmsukyr62nf/black-and-white-caixa-belas-artes-cinema-65437.jpg?dl=0, https://www.dropbox.com/s/l3qyiomplo1xy2p/candy-delicious-eating-2904.jpg?dl=0, https://www.dropbox.com/s/2jda8hu20y99jxl/cinema-food-movie-theater-33129.jpg?dl=0, https://www.dropbox.com/s/2jda8hu20y99jxl/cinema-food-movie-theater-33129.jpg?dl=0, /sWa1Y5QhGuJMjw8uuFoggGLqZ0y.jpg, https://www.dropbox.com/s/2jda8hu20y99jxl/cinema-food-movvvie-theater-33129.jpg?dl=0]
+[main] INFO  com.splunk.base.BaseClass  - Total Duplicate items in list :: 1
+[main] INFO  com.splunk.base.BaseClass  - Duplicates in List are :: [https://www.dropbox.com/s/2jda8hu20y99jxl/cinema-food-movie-theater-33129.jpg?dl=0]
+[main] INFO  com.splunk.base.BaseClass  - Added text to report successfully. /nText :: <table border='1'> <tr > <th colspan='1'><center> Duplicate Poster Path/s Detail</center></th><tr><td><left> https://www.dropbox.com/s/2jda8hu20y99jxl/cinema-food-movie-theater-33129.jpg?dl=0</left></td></tr></table>
+]]></system-out>
+  </testcase>
+  <testcase name="| batman | 0 | 200 |" classname="| batman | 0 | 200 |" time="0.15">
+    <failure message="Two or more Movies has same image/poster path." type="java.lang.AssertionError">java.lang.AssertionError: Two or more Movies has same image/poster path.
+</failure>
+  </testcase>
+  <testcase name="| batman | 0 | 200 |" classname="| batman | 0 | 200 |" time="0.007">
+    <failure message="Poster path contains broken links." type="java.lang.AssertionError">java.lang.AssertionError: Poster path contains broken links.
+</failure>
+  </testcase>
+  <testcase name="| batman | 0 | 200 |" classname="| batman | 0 | 200 |" time="0.001"/>
+  <testcase name="| batman | 0 | 200 |" classname="| batman | 0 | 200 |" time="0.001"/>
+  <testcase name="| batman | 0 | 200 |" classname="| batman | 0 | 200 |" time="0"/>
+  <testcase name="| batman | 0 | 200 |" classname="| batman | 0 | 200 |" time="0.001"/>
+  <testcase name="And User verifies all poster path is either valid or null" classname="| batman | 0 | 200 |" time="0.005">
+    <failure message="Poster path contains broken links." type="java.lang.AssertionError">java.lang.AssertionError: Poster path contains broken links.
+</failure>
+    <system-out><![CDATA[[main] INFO  com.splunk.base.BaseClass  - Total number of movies:: 16
+[main] INFO  com.splunk.base.BaseClass  - [https://www.dropbox.com/s/8i8v4ak8tnp03w4/action-blur-electronics-247932.jpg?dl=0, https://www.dropbox.com/s/opfcp4ua5fmdszj/actor-actress-adult-974477.jpg?dl=0, https://www.dropbox.com/s/1qcl5f3o1dmsn0d/adult-beard-electronics-819848.jpg?dl=0, https://www.dropbox.com/s/0j5o30t1h21u2pw/architecture-bluebird-theatre-building-208647.jpg?dl=0, https://www.dropbox.com/s/xs5w5v43lpfg4vj/auditorium-chairs-comfortable-269140.jpg?dl=0, https://www.dropbox.com/s/tr9lhmsukyr62nf/black-and-white-caixa-belas-artes-cinema-65437.jpg?dl=0, https://www.dropbox.com/s/l3qyiomplo1xy2p/candy-delicious-eating-2904.jpg?dl=0, https://www.dropbox.com/s/2jda8hu20y99jxl/cinema-food-movie-theater-33129.jpg?dl=0, https://www.dropbox.com/s/2jda8hu20y99jxl/cinema-food-movie-theater-33129.jpg?dl=0, /sWa1Y5QhGuJMjw8uuFoggGLqZ0y.jpg, https://www.dropbox.com/s/2jda8hu20y99jxl/cinema-food-movvvie-theater-33129.jpg?dl=0, https://www.dropbox.com/s/8i8v4ak8tnp03w4/action-blur-electronics-247932.jpg?dl=0, https://www.dropbox.com/s/opfcp4ua5fmdszj/actor-actress-adult-974477.jpg?dl=0, https://www.dropbox.com/s/1qcl5f3o1dmsn0d/adult-beard-electronics-819848.jpg?dl=0, https://www.dropbox.com/s/0j5o30t1h21u2pw/architecture-bluebird-theatre-building-208647.jpg?dl=0, https://www.dropbox.com/s/xs5w5v43lpfg4vj/auditorium-chairs-comfortable-269140.jpg?dl=0, https://www.dropbox.com/s/tr9lhmsukyr62nf/black-and-white-caixa-belas-artes-cinema-65437.jpg?dl=0, https://www.dropbox.com/s/l3qyiomplo1xy2p/candy-delicious-eating-2904.jpg?dl=0, https://www.dropbox.com/s/2jda8hu20y99jxl/cinema-food-movie-theater-33129.jpg?dl=0, https://www.dropbox.com/s/2jda8hu20y99jxl/cinema-food-movie-theater-33129.jpg?dl=0, /sWa1Y5QhGuJMjw8uuFoggGLqZ0y.jpg, https://www.dropbox.com/s/2jda8hu20y99jxl/cinema-food-movvvie-theater-33129.jpg?dl=0]
+[main] ERROR com.splunk.base.BaseClass  - Class:: MovieActions || Method:: isLinkBroken || Message:: Link is broken
+[main] INFO  com.splunk.base.BaseClass  - Broken Link/s :: [/sWa1Y5QhGuJMjw8uuFoggGLqZ0y.jpg]
+[main] INFO  com.splunk.base.BaseClass  - Added text to report successfully. /nText :: <table border='1'> <tr > <th colspan='1'><center> Broken Poster Path/s Detail</center></th><tr><td><left> /sWa1Y5QhGuJMjw8uuFoggGLqZ0y.jpg</left></td></tr></table>
+]]></system-out>
+  </testcase>
+  <testcase name="And User prints movie title in sorted order as per the requirement" classname="| batman | 0 | 200 |" time="0"/>
+  <testcase name="Then User prints movie title whose sum of genre ids &gt; 400" classname="| batman | 0 | 200 |" time="0"/>
+  <testcase name="And User print the movie title with pallindrome string in it" classname="| batman | 0 | 200 |" time="0"/>
+  <testcase name="And User print movie title/s which contains title of another movie" classname="| batman | 0 | 200 |" time="0"/>
+</testsuite>

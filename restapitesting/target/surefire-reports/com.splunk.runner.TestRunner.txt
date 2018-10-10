@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.splunk.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 24, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 66.632 s <<< FAILURE! - in com.splunk.runner.TestRunner
+And User verifies no two movie has same image(| batman | 0 | 200 |)  Time elapsed: 0.149 s  <<< FAILURE!
+java.lang.AssertionError: Two or more Movies has same image/poster path.
+
+| batman | 0 | 200 |  Time elapsed: 0.15 s  <<< FAILURE!
+java.lang.AssertionError: Two or more Movies has same image/poster path.
+
+And User verifies all poster path is either valid or null(| batman | 0 | 200 |)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: Poster path contains broken links.
+
+| batman | 0 | 200 |  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.AssertionError: Poster path contains broken links.
+
